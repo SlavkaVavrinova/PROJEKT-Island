@@ -26,16 +26,24 @@
         sem bude chtít vrátit.
       </p>
 
-      <p class="author">Jana Zcela Vymyšlená</p>
+      <p class="banner__author">Jana Zcela Vymyšlená</p>
     </header>
 
     <!-- menu -->
     <main>
       <ul class="navigation">
-        <li><a href="#">Úvod</a></li>
-        <li><a href="#">Proč jet na Island</a></li>
-        <li><a href="#">Co musíte vidět</a></li>
-        <li><a href="#">Fotogalerie</a></li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Úvod</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Proč jet na Island</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Co musíte vidět</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Fotogalerie</a>
+        </li>
       </ul>
 
       <!-- sekce Úvod -->
@@ -65,7 +73,7 @@
         </p>
       </section>
       <picture class="xlPicture">
-        <img src="images/island1.jpg" alt="Island" />
+        <img class="xlPicture__img" src="images/island1.jpg" alt="Island" />
         <p class="xlPicture__photographer">
           Photo &copy;
           <a class="xlPicture__link" href="https://flic.kr/p/yFnyAT"
@@ -109,7 +117,7 @@
         </p>
       </section>
       <picture class="xlPicture">
-        <img src="images/island2.jpg" alt="Island" />
+        <img class="xlPicture__img" src="images/island2.jpg" alt="Island" />
         <p class="xlPicture__photographer">
           Photo &copy;
           <a class="xlPicture__link" href="https://flic.kr/p/yiAg2h"
@@ -164,7 +172,7 @@
         </p>
       </section>
       <picture class="xlPicture">
-        <img src="images/island3.jpg" alt="Island" />
+        <img class="xlPicture__img" src="images/island3.jpg" alt="Island" />
         <p class="xlPicture__photographer">
           Photo &copy;
           <a class="xlPicture__link" href="https://flic.kr/p/LfcKHP"
@@ -344,18 +352,20 @@
         </picture>
       </section>
       <!-- patička -->
-      <footer>
+      <footer class="footer">
         <div class="footer__text">
           <p>
             Texty převzaty z článků:<br />
             Roman Pech -
             <a
+              class="footer__link"
               href="http://cestovani.idnes.cz/island-a-roman-pech-0nh-/kolem-sveta.aspx?c=A140519_125122_kolem-sveta_tom"
               >Závislost jménem Island. Tipy znalce, jak zemi levně
               procestovat</a
             ><br />
             Michal Balada -
             <a
+              class="footer__link"
               href="http://www.pohora.cz/tipy-na-vylety/16352-cesta-kolem-islandu-za-10-dni/"
               >Cesta kolem Islandu za 10 dní</a
             >
@@ -363,7 +373,9 @@
 
           <p>
             Úvodní fotografie &copy;
-            <a href="https://flic.kr/p/gett4S">Moyan Brenn</a>
+            <a class="footer__link" href="https://flic.kr/p/gett4S"
+              >Moyan Brenn</a
+            >
           </p>
         </div>
       </footer>
